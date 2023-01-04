@@ -1,0 +1,9 @@
+===================================
+  Device Changes as of 03-01-2023
+===================================
+
+  * android_device_google_raviole
+  - raven: Build updater app  [nivlafx]
+  - raven: Jan security update
+  - 
+
