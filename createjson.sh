@@ -20,7 +20,12 @@ telegram="https://t.me/CreativeRaviole" #https link (leave empty if unused)
 dt="https://github.com/Creative-OS/android_device_google_raviole" #https://github.com/ricedroidandroid/android_device_<oem>_<device_codename>
 commondt="" #https://github.com/ricedroidandroid/android_device_<orm>_<SOC>-common
 kernel="https://github.com/Creative-OS/android_kernel_google_gs101" #https://github.com/ricedroidandroid/android_kernel_<oem>_<SOC>
-
+#Sourceforge RSync Info
+username="nivlafx" #sourceforge username nivlafx
+projectname="creative-oss" #sourceforge project name
+build_out="../../" #Path leading to the start of the output dir
+file_name="$build_out/out/target/product/$device/$zip"
+sourceforgesync="rsync -e ssh $file_name $username@frs.sourceforge.net:/home/frs/project/$projectname/$device/$version"
 
 #don't modify from here
 out_path="../../"
@@ -77,3 +82,5 @@ echo '{
     }
   ]
 }' >> $device.json
+
+$sourceforgesync
