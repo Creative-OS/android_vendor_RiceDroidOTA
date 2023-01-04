@@ -7,7 +7,7 @@ maintainer="Alvin (nivlafx)" #ex: Lup Gabriel (gwolfu)
 oem="Google" #ex: OnePlus
 device="raven" #ex: guacamole
 devicename="Pixel 6 Pro" #ex: OnePlus 7 Pro
-zip="riceDroid-13.0-2023010402-raven-v10.0-PIXEL-OFFICIAL-img.zip" #ex: crDroidAndroid-<android version>-<date>-<device codename>-v<ricedroid version>.zip
+zip="riceDroid-13.0-$(date +%Y%m%d%H)-$device-v10.0-PIXEL-OFFICIAL-img.zip" #ex: crDroidAndroid-<android version>-<date>-<device codename>-v<ricedroid version>.zip
 buildtype="Beta" #choose from Testing/Alpha/Beta/Weekly/Monthly
 forum="https://t.me/CreativeRaviole" #https link (mandatory)
 gapps="" #https link (leave empty if unused)
@@ -27,10 +27,16 @@ out_path="../../"
 script_path="`dirname \"$0\"`"
 zip_name=$out_path/out/target/product/$device/$zip
 buildprop=$out_path/out/target/product/$device/system/build.prop
+changelog=$out_path/out/target/product/$device/Changelog.txt
 
 if [ -f $script_path/$device.json ]; then
   rm $script_path/$device.json
 fi
+if [ -f $script_path/changelog_$device.txt ]; then
+  rm $script_path/changelog_$device.txt
+fi
+
+cp $changelog changelog_$device.txt
 
 linenr=`grep -n "ro.system.build.date.utc" $buildprop | cut -d':' -f1`
 timestamp=`sed -n $linenr'p' < $buildprop | cut -d'=' -f2`
