@@ -530,9 +530,6 @@ dbfcf6b327 Enable FeatureFlags on "user" builds too
    * packages/apps/crDroidSettings
 8186ff1 Disable photos spoof by default
 
-   * packages/modules/AdServices
-862ec5b9 Disable aidl#generate_traces
-
    * packages/modules/Connectivity
 6815a91 Add more DNS providers [2/3]
 
@@ -1287,6 +1284,9 @@ c6578af2af Settings: disable tips and support
 33e67a9c0a Settings: Bring in missing lottie animations
 14ab05a58b Settings: Add back crdroid logo
 5a31571f3e Settings: Show CR version in About menu
+
+   * packages/modules/AdServices
+862ec5b9 Disable aidl#generate_traces
 
    * packages/services/Telecomm
 f967057 Fix dark navigationBar background in some telephony settings pages

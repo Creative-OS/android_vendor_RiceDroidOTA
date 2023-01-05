@@ -23,9 +23,8 @@ kernel="https://github.com/Creative-OS/android_kernel_google_gs101" #https://git
 #Sourceforge RSync Info
 username="nivlafx" #sourceforge username nivlafx
 projectname="creative-oss" #sourceforge project name
-build_out="../../" #Path leading to the start of the output dir
-file_name="$build_out/out/target/product/$device/$zip"
-sourceforgesync="rsync -e ssh $file_name $username@frs.sourceforge.net:/home/frs/project/$projectname/$device/$version"
+build_out="../../" #Path leading to the start of the output dir, Already set correctly
+file_name="$build_out/out/target/product/$device/$zip" #Already set correctly
 
 #don't modify from here
 out_path="../../"
@@ -33,6 +32,7 @@ script_path="`dirname \"$0\"`"
 zip_name=$out_path/out/target/product/$device/$zip
 buildprop=$out_path/out/target/product/$device/system/build.prop
 changelog=$out_path/out/target/product/$device/Changelog.txt
+sourceforgesync="rsync -e ssh $file_name $username@frs.sourceforge.net:/home/frs/project/$projectname/$device/10.x"
 
 if [ -f $script_path/$device.json ]; then
   rm $script_path/$device.json
