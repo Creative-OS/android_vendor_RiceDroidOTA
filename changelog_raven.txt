@@ -1,4 +1,21 @@
 ====================
+     01-06-2023
+====================
+
+
+   * packages/apps/crDroidSettings
+27b5c2d Fix weather settings
+
+   * vendor/lineage
+11280b2c Not needed however lean towards rice vendor
+87bb717a Enable blur by default and remove duplicate updater
+
+====================
+     01-05-2023
+====================
+
+
+====================
      01-04-2023
 ====================
 
@@ -123,6 +140,11 @@ f545a72c Add updatepackage to build task
 ====================
 
 
+====================
+     01-02-2023
+====================
+
+
    * android
 f1391bd Rice P6 Requirements
 
@@ -132,6 +154,9 @@ ff470e1 Squash: build: build changelog [1/2]
    * build/soong
 40cd268 soong: Whitelist llvm-addr2line
 
+   * packages/apps/crDroidSettings
+8186ff1 Disable photos spoof by default
+
    * system/sepolicy
 a72ab5515 sepolicy: Address incremental fs SeLinux denials
 
@@ -139,7 +164,7 @@ a72ab5515 sepolicy: Address incremental fs SeLinux denials
 9c38f9cf p6rice: adapt Changelog handling in Makefile [2/2]
 
 ====================
-     01-02-2023
+     01-01-2023
 ====================
 
 
@@ -372,6 +397,89 @@ b7bee7d72e01 ViewConfiguration: Fix multi-thread safety issue
 e22bf44ac2b8 Fix creation of a new thread in UDFS controller
 549115dfe643 Make sure gc_urgent is normal mode, when no need GC
 1709ccf90ecf initialize mNeedGC
+930b26f069ae base: Add support for strict standby policy
+a10cbb87e2d5 [BugFixed][OOM_ADJ] use max_adj to control process final adj
+8418552b698b [Bugfix][Stability] Fix system_server kills itself by mistake.
+704571f9a65b Recheck the condition before really killing
+6545253b80c4 services: ActiveServices: drop uid check when notifying newly registered callbacks
+a2a4ac84f711 [Bugfix] Avoid Removing uid from mActiveUids again
+f7b98cf3aa7d SystemUI: restart timeout causes black screen
+c18a890ccd11 fix the result when Adj > visible
+a00db235a03e [Bugfix][ContentProvider] Fix the anr procedure of a ContentProvider no longer responding
+4ae7190ebaa7 service/provider adj should not delivery to client when cycleReEval computeOomAdjLSP in Cycle strategy.
+744eac1625f7 Fix an issue when recomputing adj in cycles.
+70b7ae2ec44b [Bugfix] Remove publish map if provider is dying
+2dc8adb33a85 ProcessList: Silence lmkd retries logspam
+c0d21f320cff base: Introduce AOSP boost and memory optimization framework API
+b82bf6c501df CachedAppOptimizer : Fix cached & persistent apps compaction
+3cdb2c4b5465 SystemUI: Hide oos clear all if reticker enable
+abedb7789799 SystemUI: fixup! Hide OOS clear all if panel visible because Headsup
+3d349b3dd1d9 SystemUI: Custom style notification clear all button [1/2]
+1d3a93e1ce61 Battery: make fill path rounded
+206f7124f0c1 SystemUI: Switch notification background to monet on heads up
+d3daa374042d Make center clock follow paddingTop
+7e4c58a29370 SystemUI: Fix up status bar end side content layout
+e58e1f66ea8f SystemUI: Fix up statusbar clock bg chip layout
+6697aec63277 SystemUI: Fix up status bar start side content layout
+5a403459ace1 Fix issues with center clock
+d1d05d1a22ea fixup! Custom statusbar logo customizations
+eadb55756bf5 Calm down attention service logspam
+74228ab8dca2 base: Update few drawables
+953d93f93ab5 ServiceRegistry: Don't throw an exception if OEM_LOCK is missing
+cf49c9587d47 Fix incorrect context classloader initialization in system_server
+f31e0bf7fd38 Fix MtpDatabase multithreading NullPointerException
+adc270af586b BackupAgent: Add backup shared mode
+bd27d6757a8e base: Added screenshot tile
+c82a0003ad35 fwb: Smart Pixels on UDFPS - drop disable_smart_pixels_on_udfps flag
+871c62d07cf4 New Crowdin updates (#920)
+7457967af19a SystemUI: Match lockscreen clock font with system
+f8c77db60c1d fwb: Allow disable Smart Pixels on UDFPS
+1c9c55019f1c FingerprintManager: Fix NPE due to sensorProps
+6206f7da7f73 SidefpsController: Apply ScaleFactor to sensorLocationY
+1f4a7e0bea79 DozeSensors: only use proximity sensor if supported
+ef2239737885 New Crowdin updates (#918)
+a5441f1ecbd7 SystemUI: Introduce dynamic VoLTE & VoWiFi icons
+452af5f45fb0 ParallelSpace: Mark badge string as not translatable
+d1eb2fef30d2 SmartPixels: Fix BatteryController dependency crash
+00e8a9102d14 Slightly optimize less boring apps check for heads up
+8191e3dab455 Remove RESET_BATTERY_STATS permission for resetting stats
+1021de4162d8 QSTileHost: Fix crashes with tiles like Anti flicker
+61775825804b DisplayModeDirector: Make sure we apply refresh rate on startup
+3cbc8596b9d4 DisplayPowerController: avoid updating settings when adjustment is NaN
+bcaf28504931 System crash during dismissing split in multi-user scenario
+a6fa5ae1ead5 When a user is unlocked, it will install provider, but it cannot publish Provider successfully,we need add pr.installProvider before scheduleInstallProvider
+305be540c610 Fix watchdog when NaN lux is reported.
+04fca7aa06ad New Crowdin updates (#914)
+57928438d8e0 Update Crowdin configuration file
+16bef0804836 services: Suppress double upgrade notification for parallel space
+48dc85d54d59 services: Fix parallel space crash with third party launcher
+fdcdd6b2c9c3 services: Do not turn on multi user switch for new parallel space
+41901cab16ab data: Add missing priv-app permissions for parallel space
+e6830cc35ce6 ActivityStarter: Resolve launcher intent to parallel owner user
+54baf964247d services: location: Whitelist parallel space users
+8f85d6a9336e services: camera: Whitelist parallel space users
+214a61b98329 SystemUI: Fix privacy indicator not showing for apps in parallel spaces
+daef7182437e base: Expose parallel space owner to api
+8381d5e408b4 Whitelist some Packages for Parallel space
+925add57cc90 base: Add support for managing files across parallel spaces
+47cd24c171be base: Add support for parallel space
+b3bd58db04dc BatteryStatsImpl: Stop resetting battery stats after reboot
+3aef86af2c34 frameworks: Reset battery stats [1/3]
+44ff8bd55832 Add config overlay to force enable multi resolution for camera
+c1848ac4e097 Additional callbacks for firewall status bar icon
+2e00300078ca SystemUI: Bring in drawable for statusbar firewall toggle
+fb51a5711c25 Implement firewall status bar indicator
+59161a07f097 Revert "Remove fixed grant of READ_PHONE_STATE and cleanup"
+5175d5c5644a SystemUI: Switch to config for Refresh Rate QS tile
+023d9c908d82 RefreshRateTile: Improve logic
+827cf221f7e0 base: added refresh rate tile
+b05a1fc312b4 Introduce trimMemory to AppIconCacheManager
+71dd41035bf7 udfps: Implement framework dimming support
+fe2238a129de base: Allow toggling floating rotation button [1/3]
+97f7b1e604f7 Settings: make SensorBlock readable by non-system apps
+6107d2f9d97b Make sensor block package list configurable [1/2]
+d36fe12b0b87 base: Add Accelerometer and Linear Acceleration sensors in blocking list
+c83b27e17d37 FWB: Sensor block per-package switch (1/2)
 
    * frameworks/libs/net
 513f038 Add more DNS providers [1/3]
@@ -527,8 +635,8 @@ dbfcf6b327 Enable FeatureFlags on "user" builds too
 0ce8917c9c crdroid: Adapt settings for A13
 83e63a5de5 Settings: Integrate crDroidSettings into Settings
 
-   * packages/apps/crDroidSettings
-8186ff1 Disable photos spoof by default
+   * packages/modules/AdServices
+862ec5b9 Disable aidl#generate_traces
 
    * packages/modules/Connectivity
 6815a91 Add more DNS providers [2/3]
@@ -543,7 +651,7 @@ c08ce45 addons: Update OmniJaws
 11417c3 Remove HbmSVManager
 
 ====================
-     01-01-2023
+     12-31-2022
 ====================
 
 
@@ -560,89 +668,6 @@ dee7660 fonts: Remove real Noto Serif Latin fonts
 617fdc8 av: Add support per-app volume [1/3]
 
    * frameworks/base
-930b26f069ae base: Add support for strict standby policy
-a10cbb87e2d5 [BugFixed][OOM_ADJ] use max_adj to control process final adj
-8418552b698b [Bugfix][Stability] Fix system_server kills itself by mistake.
-704571f9a65b Recheck the condition before really killing
-6545253b80c4 services: ActiveServices: drop uid check when notifying newly registered callbacks
-a2a4ac84f711 [Bugfix] Avoid Removing uid from mActiveUids again
-f7b98cf3aa7d SystemUI: restart timeout causes black screen
-c18a890ccd11 fix the result when Adj > visible
-a00db235a03e [Bugfix][ContentProvider] Fix the anr procedure of a ContentProvider no longer responding
-4ae7190ebaa7 service/provider adj should not delivery to client when cycleReEval computeOomAdjLSP in Cycle strategy.
-744eac1625f7 Fix an issue when recomputing adj in cycles.
-70b7ae2ec44b [Bugfix] Remove publish map if provider is dying
-2dc8adb33a85 ProcessList: Silence lmkd retries logspam
-c0d21f320cff base: Introduce AOSP boost and memory optimization framework API
-b82bf6c501df CachedAppOptimizer : Fix cached & persistent apps compaction
-3cdb2c4b5465 SystemUI: Hide oos clear all if reticker enable
-abedb7789799 SystemUI: fixup! Hide OOS clear all if panel visible because Headsup
-3d349b3dd1d9 SystemUI: Custom style notification clear all button [1/2]
-1d3a93e1ce61 Battery: make fill path rounded
-206f7124f0c1 SystemUI: Switch notification background to monet on heads up
-d3daa374042d Make center clock follow paddingTop
-7e4c58a29370 SystemUI: Fix up status bar end side content layout
-e58e1f66ea8f SystemUI: Fix up statusbar clock bg chip layout
-6697aec63277 SystemUI: Fix up status bar start side content layout
-5a403459ace1 Fix issues with center clock
-d1d05d1a22ea fixup! Custom statusbar logo customizations
-eadb55756bf5 Calm down attention service logspam
-74228ab8dca2 base: Update few drawables
-953d93f93ab5 ServiceRegistry: Don't throw an exception if OEM_LOCK is missing
-cf49c9587d47 Fix incorrect context classloader initialization in system_server
-f31e0bf7fd38 Fix MtpDatabase multithreading NullPointerException
-adc270af586b BackupAgent: Add backup shared mode
-bd27d6757a8e base: Added screenshot tile
-c82a0003ad35 fwb: Smart Pixels on UDFPS - drop disable_smart_pixels_on_udfps flag
-871c62d07cf4 New Crowdin updates (#920)
-7457967af19a SystemUI: Match lockscreen clock font with system
-f8c77db60c1d fwb: Allow disable Smart Pixels on UDFPS
-1c9c55019f1c FingerprintManager: Fix NPE due to sensorProps
-6206f7da7f73 SidefpsController: Apply ScaleFactor to sensorLocationY
-1f4a7e0bea79 DozeSensors: only use proximity sensor if supported
-ef2239737885 New Crowdin updates (#918)
-a5441f1ecbd7 SystemUI: Introduce dynamic VoLTE & VoWiFi icons
-452af5f45fb0 ParallelSpace: Mark badge string as not translatable
-d1eb2fef30d2 SmartPixels: Fix BatteryController dependency crash
-00e8a9102d14 Slightly optimize less boring apps check for heads up
-8191e3dab455 Remove RESET_BATTERY_STATS permission for resetting stats
-1021de4162d8 QSTileHost: Fix crashes with tiles like Anti flicker
-61775825804b DisplayModeDirector: Make sure we apply refresh rate on startup
-3cbc8596b9d4 DisplayPowerController: avoid updating settings when adjustment is NaN
-bcaf28504931 System crash during dismissing split in multi-user scenario
-a6fa5ae1ead5 When a user is unlocked, it will install provider, but it cannot publish Provider successfully,we need add pr.installProvider before scheduleInstallProvider
-305be540c610 Fix watchdog when NaN lux is reported.
-04fca7aa06ad New Crowdin updates (#914)
-57928438d8e0 Update Crowdin configuration file
-16bef0804836 services: Suppress double upgrade notification for parallel space
-48dc85d54d59 services: Fix parallel space crash with third party launcher
-fdcdd6b2c9c3 services: Do not turn on multi user switch for new parallel space
-41901cab16ab data: Add missing priv-app permissions for parallel space
-e6830cc35ce6 ActivityStarter: Resolve launcher intent to parallel owner user
-54baf964247d services: location: Whitelist parallel space users
-8f85d6a9336e services: camera: Whitelist parallel space users
-214a61b98329 SystemUI: Fix privacy indicator not showing for apps in parallel spaces
-daef7182437e base: Expose parallel space owner to api
-8381d5e408b4 Whitelist some Packages for Parallel space
-925add57cc90 base: Add support for managing files across parallel spaces
-47cd24c171be base: Add support for parallel space
-b3bd58db04dc BatteryStatsImpl: Stop resetting battery stats after reboot
-3aef86af2c34 frameworks: Reset battery stats [1/3]
-44ff8bd55832 Add config overlay to force enable multi resolution for camera
-c1848ac4e097 Additional callbacks for firewall status bar icon
-2e00300078ca SystemUI: Bring in drawable for statusbar firewall toggle
-fb51a5711c25 Implement firewall status bar indicator
-59161a07f097 Revert "Remove fixed grant of READ_PHONE_STATE and cleanup"
-5175d5c5644a SystemUI: Switch to config for Refresh Rate QS tile
-023d9c908d82 RefreshRateTile: Improve logic
-827cf221f7e0 base: added refresh rate tile
-b05a1fc312b4 Introduce trimMemory to AppIconCacheManager
-71dd41035bf7 udfps: Implement framework dimming support
-fe2238a129de base: Allow toggling floating rotation button [1/3]
-97f7b1e604f7 Settings: make SensorBlock readable by non-system apps
-6107d2f9d97b Make sensor block package list configurable [1/2]
-d36fe12b0b87 base: Add Accelerometer and Linear Acceleration sensors in blocking list
-c83b27e17d37 FWB: Sensor block per-package switch (1/2)
 4bc9676fbf10 fonts: Don't build real DroidSansMono
 500e34b6fdf2 SystemSensorManager: sensor block per-package
 d1d6c149e80d Do not show camera indicator for Face Unlock service
@@ -1254,48 +1279,6 @@ dc6850f Reduce experimental targets list
    * packages/apps/DeskClock
 3496824 DeskClock: Add FLAG_IMMUTABLE flag to PendingIntent
 
-   * packages/apps/Settings
-0b7c9969a5 Settings: Fix up panel theme and layout
-0c4d9642e0 Settings: Fix data usage display on mobile panel
-9852fe45b9 Settings: MobileDataPanel: Remove VoLTE slice
-4fa2e0b891 Settings: Add back DataUsageSlice
-0670f5f75d Settings: panels: Improvements
-90c63b2b4a Settings: panels: Add Bluetooth panel
-05c44e6012 Settings: panels: Add Mobile Data panel
-9b4877982c Settings: Align user avatar with homepage title
-a83ae74cbe Settings: Add Glide library
-e8779f4275 Settings: Add fp edu lottie animation
-ce1565eb92 gestures: Update required hint switch package
-f425b8f3e2 Phone ringtone setting for Multi SIM device [2/3]
-01c8538a92 Settings: stop logspill from ProcessStats
-e20d05c2bb WifiDisplaySettings: Fix some NPE
-99cbfc5845 Drawables: Dark mode support for app installation restriction icon
-9b2283cd36 Remove empty Security status header
-693bfc4235 Settings: Enable Quick Wallet settings for all devices with NFC
-d358e65fcf Settings: fix rest of the edit menu icon tint
-98dc3de9c5 Settings: Address a memory leak
-252a4993bc Settings: Fixup start padding for battery usage graph
-c6578af2af Settings: disable tips and support
-362fd312e1 Settings: check wifi direct feature for showing preferences
-781c848761 Settings: DevicePicker: Adapt to S style
-67793e922e Settings: res: Import screen_resolution_* drawables from SettingsGoogle
-24a135c7f0 Settings: Update settings animations
-7be6b6357a Settings: Add missing gesture and battery animations
-33e67a9c0a Settings: Bring in missing lottie animations
-14ab05a58b Settings: Add back crdroid logo
-5a31571f3e Settings: Show CR version in About menu
-
-   * packages/modules/AdServices
-862ec5b9 Disable aidl#generate_traces
-
-   * packages/services/Telecomm
-f967057 Fix dark navigationBar background in some telephony settings pages
-
-====================
-     12-31-2022
-====================
-
-
    * packages/apps/Launcher3
 4c022bafcb Launcher3: Fix taskbar crash without QSB
 ecf9ea485c Launcher3: Update activity for Aperture camera shortcut
@@ -1425,11 +1408,42 @@ af4e8a21a8 Launcher3: Use system collapsing toolbar
 36a5104e6f Launcher3: Use regular body font for app labels
 0b2de0dac8 Launcher3: Use font configs instead hardcoded fonts
 
+   * packages/apps/Settings
+0b7c9969a5 Settings: Fix up panel theme and layout
+0c4d9642e0 Settings: Fix data usage display on mobile panel
+9852fe45b9 Settings: MobileDataPanel: Remove VoLTE slice
+4fa2e0b891 Settings: Add back DataUsageSlice
+0670f5f75d Settings: panels: Improvements
+90c63b2b4a Settings: panels: Add Bluetooth panel
+05c44e6012 Settings: panels: Add Mobile Data panel
+9b4877982c Settings: Align user avatar with homepage title
+a83ae74cbe Settings: Add Glide library
+e8779f4275 Settings: Add fp edu lottie animation
+ce1565eb92 gestures: Update required hint switch package
+f425b8f3e2 Phone ringtone setting for Multi SIM device [2/3]
+01c8538a92 Settings: stop logspill from ProcessStats
+e20d05c2bb WifiDisplaySettings: Fix some NPE
+99cbfc5845 Drawables: Dark mode support for app installation restriction icon
+9b2283cd36 Remove empty Security status header
+693bfc4235 Settings: Enable Quick Wallet settings for all devices with NFC
+d358e65fcf Settings: fix rest of the edit menu icon tint
+98dc3de9c5 Settings: Address a memory leak
+252a4993bc Settings: Fixup start padding for battery usage graph
+c6578af2af Settings: disable tips and support
+362fd312e1 Settings: check wifi direct feature for showing preferences
+781c848761 Settings: DevicePicker: Adapt to S style
+67793e922e Settings: res: Import screen_resolution_* drawables from SettingsGoogle
+24a135c7f0 Settings: Update settings animations
+7be6b6357a Settings: Add missing gesture and battery animations
+33e67a9c0a Settings: Bring in missing lottie animations
+14ab05a58b Settings: Add back crdroid logo
+5a31571f3e Settings: Show CR version in About menu
+
    * packages/apps/ThemePicker
 5ed9e35 ThemePicker: add support for custom themed icon pack [2/3]
 
-   * packages/modules/Bluetooth
-3496ca8 legacy: Split header for hci legacy definitions
+   * packages/services/Telecomm
+f967057 Fix dark navigationBar background in some telephony settings pages
 
 ====================
      12-30-2022
@@ -1474,6 +1488,30 @@ a5dc5298c3 Launcher3: Change app name to crDroid Home
    * packages/apps/Settings
 1449a7ed0d Settings: Pass empty lottie resource for quickly open camera animation
 
+   * packages/apps/ThemePicker
+98b33b6 Themepicker: Disable monet styles
+a335380 ThemePicker: Remove beta tag for themed icons
+4735962 fixup!: ThemePicker: Actually enable color picker
+72e38a5 Override legacy WallpaperPicker app
+b091b82 Update pixelthemestub from cheetah-user 13 TD1A.220804.009.A2
+1f887aa Update pixelthemestub from raven TP1A.221005.002 9012097
+9ee7a25 Themepicker: Remove lineagethemestub  override
+4ef0d82 ThemePicker: Actually enable color picker
+8b89772 Update PixelThemesStub from raven-user-13-TP1A.220905.004-8927612-release-keys
+bfd5432 ThemePicker: Import pixel themes stub package
+0edf50c ThemePicker: implement dummy recent wallpapers provider for Pixel Launcher
+7655680 Define themepicker override/s
+b82d597 Add permission for launcher preview rendering
+99d07bc Declare HOME query for launcher discovery
+f4f7c2e Specify we read and write launcher settings
+6e13488 Add wallpaper default permissions
+c9236c0 Add wallpaper privapp whitelist
+325bdd1 ThemePicker: Override WallpaperCropper
+8e05f57 ThemePicker: Bring in the new icon
+
+   * packages/modules/Bluetooth
+3496ca8 legacy: Split header for hci legacy definitions
+
    * packages/modules/Permission
 2ad8669 enable usage timeline for all permission groups
 
@@ -1485,30 +1523,11 @@ a5dc5298c3 Launcher3: Change app name to crDroid Home
 ====================
 
 
-   * lineage/mirror
-1f796cd Updated aosp-minimal to 28-Dec-2022 13:01 UTC
-
 ====================
      12-28-2022
 ====================
 
 
-   * frameworks/base
-8658042a3c1c SystemUI: Align QS header with status bar
-
-   * packages/apps/Etar
-b332cff Override androidx.startup.InitializationProvider authority name
-
-====================
-     12-27-2022
-====================
-
-
-====================
-     12-26-2022
-====================
-
-
-   * packages/apps/GameSpace
-3e5a8c7 settings: Update URI key for three finger screenshot
+   * lineage/mirror
+1f796cd Updated aosp-minimal to 28-Dec-2022 13:01 UTC
 
