@@ -1,0 +1,28 @@
+{
+  "response": [
+    {
+        "maintainer": "NivlaFX",
+        "oem": "Motorola",
+        "device": "Edge",
+        "filename": "riceDroid-13.0-202301151305-racer-v10.1-PIXEL-OFFICIAL.zip",
+        "download": "https://sourceforge.net/projects/creative-oss/files/racer/10.x/riceDroid-13.0-202301151305-racer-v10.1-PIXEL-OFFICIAL.zip/download",
+        "timestamp": 1673787938,
+        "md5": "6b1880dfc5a258bc480b198f21041358",
+        "sha256": "c9fcd911a2a79838abfc4fec841d3aec2918c4fafee875f17347cc8d31f6c6ea",
+        "size": 1807771057,
+        "version": "10.1",
+        "buildtype": "Beta",
+        "forum": "https://t.me/CreativeRaviole",
+        "gapps": "",
+        "firmware": "",
+        "modem": "",
+        "bootloader": "",
+        "recovery": "",
+        "paypal": "",
+        "telegram": "https://t.me/CreativeRaviole",
+        "dt": "https://github.com/Creative-OS/android_device_google_raviole",
+        "common-dt": "",
+        "kernel": "https://github.com/Creative-OS/android_kernel_google_gs101"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "response": [
+    {
+        "maintainer": "Alvin (nivlafx)",
+        "oem": "Google",
+        "device": "Pixel 6",
+        "filename": "riceDroid-13.0-2023010923-oriole-v10.0-PIXEL-OFFICIAL-img.zip",
+        "download": "https://sourceforge.net/projects/creative-oss/files/oriole/10.x/riceDroid-13.0-2023010923-oriole-v10.0-PIXEL-OFFICIAL-img.zip/download",
+        "timestamp": 1673319879,
+        "md5": "3cd747626e07de1c2f4f9e3efd0b2338",
+        "sha256": "0c0089834071b9be4ff94bab477d7f9a2f8f4f6e5b4eaf38310fd2eb97edddfd",
+        "size": 2464189370,
+        "version": "10.0",
+        "buildtype": "Beta",
+        "forum": "https://t.me/CreativeRaviole",
+        "gapps": "",
+        "firmware": "",
+        "modem": "",
+        "bootloader": "",
+        "recovery": "",
+        "paypal": "",
+        "telegram": "https://t.me/CreativeRaviole",
+        "dt": "https://github.com/Creative-OS/android_device_google_raviole",
+        "common-dt": "",
+        "kernel": "https://github.com/Creative-OS/android_kernel_google_gs101"
+    }
+  ]
+}

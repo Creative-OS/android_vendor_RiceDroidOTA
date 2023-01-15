@@ -3,11 +3,13 @@
 
 #modify values below
 #leave blank if not used
-maintainer="Alvin (nivlafx)" #ex: Lup Gabriel (gwolfu)
-oem="Google" #ex: OnePlus
-device="raven" #ex: guacamole
-devicename="Pixel 6 Pro" #ex: OnePlus 7 Pro
-zip="riceDroid-13.0-$(date +%Y%m%d%H)-$device-v10.0-PIXEL-OFFICIAL-img.zip" #ex: crDroidAndroid-<android version>-<date>-<device codename>-v<ricedroid version>.zip
+version="10.1"
+buildtype="PIXEL"
+maintainer="NivlaFX" #ex: Lup Gabriel (gwolfu)
+oem="Motorola" #ex: OnePlus
+device="racer" #ex: guacamole
+devicename="Edge" #ex: OnePlus 7 Pro
+zip="riceDroid-13.0-$(date +%Y%m%d%H%M)-$device-v$version-$buildtype-OFFICIAL.zip" #ex: crDroidAndroid-<android version>-<date>-<device codename>-v<ricedroid version>.zip
 buildtype="Beta" #choose from Testing/Alpha/Beta/Weekly/Monthly
 forum="https://t.me/CreativeRaviole" #https link (mandatory)
 gapps="" #https link (leave empty if unused)
@@ -17,9 +19,9 @@ bootloader="" #https link (leave empty if unused)
 recovery="" #https link (leave empty if unused)
 paypal="" #https link (leave empty if unused)
 telegram="https://t.me/CreativeRaviole" #https link (leave empty if unused)
-dt="https://github.com/Creative-OS/android_device_google_raviole" #https://github.com/ricedroidandroid/android_device_<oem>_<device_codename>
+dt="https://github.com/Creative-OS/android_device_motorola_racer" #https://github.com/ricedroidandroid/android_device_<oem>_<device_codename>
 commondt="" #https://github.com/ricedroidandroid/android_device_<orm>_<SOC>-common
-kernel="https://github.com/Creative-OS/android_kernel_google_gs101" #https://github.com/ricedroidandroid/android_kernel_<oem>_<SOC>
+kernel="https://github.com/Creative-OS/android_kernel_motorola_gs101" #https://github.com/ricedroidandroid/android_kernel_<oem>_<SOC>
 #Sourceforge RSync Info
 username="nivlafx" #sourceforge username nivlafx
 projectname="creative-oss" #sourceforge project name

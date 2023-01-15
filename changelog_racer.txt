@@ -1,0 +1,348 @@
+====================
+     01-15-2023
+====================
+
+
+   * build/soong
+ab4bc7d2e soong: Specify heap size for metalava for S+
+a13b80fbb soong: cc: Enable global O3
+9983dd026 Use missing.x509.pem instead of missing.pem for faked missing certificates
+2fcc4c921 Move AllowMissingDependencies handling into processMainCert
+b6dd13685 copy JNI from AAR files to android_app APK
+68f4f4208 Use aapt2
+
+   * device/motorola/racer
+28bc728 Riced
+
+   * frameworks/base
+7f1c0df5ee9d core: Fix classloader and instrumentation initialization
+a033b436f68b SystemUI: Fix inactive volume slider icons when using custom volume styles
+eae88fac42ba core: Allow telephony stack and its components to receive un-sanitized ServiceState entries
+c86c760a3c24 Add support for GMS switch
+664b669c8aa1 ParallelSpace: Allow devices to overlay whitelist/blocklist apps
+da76881786aa SystemUI: Update volume panel UI color specs
+0de62f79676f SettingsProvider: Handle WRITE_DEVICE_CONFIG permission denial for gms
+e7e7d1f20c60 Cleanup 'Update battery info every second when device is charging'
+c693f39ad2ff Make overlay for 'Update battery info every second when device is charging'
+9cca42cb8cde Update battery info every second when device is charging
+848709837e64 fwb: Only enable some features on eng build
+d61681f6be43 SystemUI: Re-designed caffeine tile icon
+65bd53bedc49 Calculate apk size multiple times
+4c3cbc22e830 fixup! fw/b: Add support for allowing/disallowing apps on cellular, vpn and wifi networks
+fce80ef739fd DefaultPermissionGrant: Fix google search crash
+fcf9e217bd50 base: Bring back suspend app perms
+b61a0bf7be25 Permissions: Grant Personal Safety perms
+e7f115c36a44 Fix android setup permissions
+8c7e53e91306 Permissions: Grant missing Gapps perms
+8218cc8d700b Permissions: Grant Google Markup perms
+1910243abcdf Permissions: Grant Pixel's Wallpaper app access to SD
+ca3abf9867c3 Permissions: Grant Google Sound Picker storage perms
+a09dafe61800 Permissions: Grant Mediascanner access permissions to external storage
+86e7c65c216e base: Grant suspend permission to Flipendo
+620ff861a631 fwb: Disable some debug/log/trace
+f9ce667c4e74 MediaCodec: check for exceptions when creating crypto info
+38ec16a277bb Do not preload ThreadLocalRandom class.
+7672f5584f04 StrictMode: Enable by default only in ENG builds
+d18b1d393657 Guard in short-circuit evaluations for stringSplit methods.
+d162cbddc17f SystemUI: Add Pixel battery addons [1/2]
+760275a22546 core: Integrate dual tone base layout to framework
+e321e06643d0 base: Introduce Scarlet system manager
+ea7c4a103d42 Revert "SystemUI: write initial value of SHOW_QR_CODE_SCANNER_SETTING on first call"
+218a65205b10 SystemUI: match brightness slider track height with the progress drawable
+2c79f1f87177 SystemUI: Link UI elements radii to `dialogCornerRadius` attribute
+18f5a06aec59 Revert "config: Enable QR scanner shortcut in lock screen"
+9ad64a6e728c SettingsLib: CollapsingToolbarBaseActivity: Increase scrim transition…
+91ad672c1bdd base: SettiingsLib: Change collapse mode to scale
+fea74bf03591 SettingsLib: Make IllustrationPreference bg protection transparent
+a37adbab679d SystemUI: Hardcode lock icon color to white
+255bf6a25baa SystemUI: Introduce camera & flashlight keyguard affordance
+06f9da6fa426 base: dont call roundStorageSize on Storage API for getting sizes
+3707290ca0bd graphics: Override system fonts with user-selected overlays
+4b6fd2baaa43 styles: Use user fonts for Material UI themes
+4e902faf5d31 Fix black screen issue due to wallpaper decoding exceptions
+4c43b785b825 Shrink by 0.5 for YUV TextViews
+82d141c89012 hwui: renderthread/CanvasContext: Reduce the timeout for dequeueing buffers
+59da1929598b KeyguardIndication: Set wakelock on doze only when required
+b9fa088b0dcc base: Refactor Wi-Fi standard icons
+fd68c1da1d69 base: Import Wi-Fi standard icon [1/2]
+06fae3629482 Align passing member references to do nativeInit
+b362d0c15b04 Nfc: Replace use of android.view.Window->isDestroyed()
+fdcf6b0d9e68 Nfc: Change TechListParcel to use public Parcel->readStringArray()
+223bb6f9d38d ImageUtils: Fix estimated bytes factor for P010
+1cd05acdb834 [Bugfix] Fix the anr dialog is shown repeatly in some cases.
+3b82c318583f Fix potential crash in ImageTransformState
+6adde4ceb63a Add @Nullable to SensorManager.getDefaultSensor's return value
+def2f28d8827 Revert "SystemUI: Use headline font for important UI elements"
+82995009fbed Sync anim durations with Nothing Phone 1
+cf6fcf5062ab SurfaceTexture: add setConsumerCanWait()
+d015c2ac1321 camera: Add backwards-compatible CaptureResultExtras constructor
+b0e1695e0b00 SystemUI: write initial value of SHOW_QR_CODE_SCANNER_SETTING on first call
+fb3d6be61244 Intent: Fix launch of permision revoke activity from playstore
+202856b6438b fixup! Battery Styles: Clean up for more customizations
+e55f99869075 fixup! Battery Styles: Re-evaluate system theme on QS battery location change
+285006b48049 PixelPropsUtils: Bump fingerprints for January ASB
+2cdfca22128a blur: Switch to glass blur effect
+2b04de1bc3ac Revert "ImageUtils: Fix estimated bytes factor for P010"
+b0163620c7d1 Youtube application when moving to PIP animation was very bad
+61d7e12574e2 Handle unparsable public keys
+f9815f11ebf5 InsetsStateController: Replace ArrayMap with HashMap for performance
+2fe2c8b1455d base: Make hwui renderer property persistent
+f2eace394486 SystemUI: Make keyguard elements follow clock font
+a224e86728a1 SystemUI: Configurable text size for Large LS clock
+02c8b5553551 SystemUI: Configurable top margin for ls clock
+
+   * frameworks/native
+ebad81fd63 IPCThreadState::hasExplicitIdentity()
+87b3bccd35 Fix Surface HDR meta reset
+39ba04d76a installd: explicitly specify capabilities
+05c8e4f910 SurfaceFlinger: skip composition when presenting a single auto-refresh layer
+534065d768 SurfaceFlinger: keep auto-refresh in sync between producer and consumer
+c508a9a61e BufferQueueConsumer: acquire a buffer only if fence is signaled
+e563f57194 DO NOT MERGE Extend mPreviousPresentFences for high refresh rate
+fbeba3a68c SF: Bring back support for disabling backpressure propagation
+6e04fee376 Replace duplicate shaderOutputLayer with subgroupBroadcastDynamicId
+1a5cf5a6a3 renderengine: skia: switch to glass blur effect
+35f769c8c6 Turn off LTO for libvibratorservice_test as a workaround
+dda33ab50b Turn off LTO for libviabratorservice as a workaround
+ab76646558 BLASTBufferQueue: Comment out lines causing log spam (#13)
+
+   * packages/apps/Launcher3
+1680119820 Launcher3: InfoBottomSheet: Fix NPE with AppTransitionManager
+143388900f Launcher3: Ship as SushiLauncher
+b4bee3471b SushiLauncher: Update extended style format
+d2432886bb SushiLauncher: Revamp settings activity
+8469b9ece8 SushiLauncher: Add an about section
+e7b7f0ae6b Launcher3: Keep hotseat bottom spacing for taskbar devices
+a73d516e45 Launcher3: Adjust suggestions row vertical padding
+6c7e86d55f Launcher3: Do not skip search animation for app icons
+1ae98dd8a9 Launcher3: Do not limit the number of search results
+
+   * packages/apps/Settings
+eba60fdec9 settings: Fix power usage summary preference fragment path
+ce93107283 Settings: Update PowerUsageFeature implementation for QPR1
+e0fef59bfe Settings: Add Pixel battery addons [1/2]
+928f0770b8 settings: Hardcode preference icons to color accent
+2098ba3fd5 settings: Update easter egg
+
+   * packages/apps/Updater
+0279c0c More ricedroid changes
+d62ad08 Change to my custom repo
+d59a997 Redirect links to new organization
+2f61a39 Updater: Initial riceDroid changes
+07bbc2a Correct changelog URL (#41)
+50b93ef Updater: Point 13.0 sources
+b7c903e New translations (#40)
+0aa605b Update Crowdin configuration file
+51e5e77 Updater: Move strings for translation
+6324d60 Revert "Updater: layout: activity_updates: add spacing.."
+b3140b8 Updater: Rework drawables for support links
+4fe5556 Updater: Update parsed info whenever data is refreshed
+8c795d2 Updater: Properly add visible strings
+59896cc Updater: add support links and some more info
+66f5694 Updater: Use headline font for activity header
+48e47fb Updater: adapt to new changelog url
+ad01dbc Updater: Hide recovery update option by default
+69e39f0 Updater: Nuke Lineage's website on installation blocked dialog
+9006103 Updater: Initial adaption for crdroid
+7c2229b Updater: Change package name to avoid conflict
+f92f602 Updater: add support for local updates
+339c3ef Ship as crDroid based on LOS
+
+   * packages/apps/crDroidSettings
+d530458 settigns: Add support for GMS switch
+ef4be53 settings: Scarlet services: Add an option to switch to ring mode on screen off
+5545101 settings: Fix scarlet preference icons tint
+7c9e796 settings: Ship as riceDroid
+7aeddeb settings: Personalizations kitchen bringup
+305497c settings: theme engine: Use live clock instead of fixed text
+47c4ff9 settings: Introduce Scarlet system manager
+69e09c5 settings: Bring in the kitchen dashboard
+6f9f5d6 settings: Import Wi-Fi standard icon
+a2fc640 settings: Improve CustomSeekBarPreference drawables
+
+   * system/sepolicy
+b9f098390 sepolicy: Allow untrusted app with api 30 access to qemu properties
+
+   * vendor/gms
+0f68ee0 vendor: An an option for maintainers to build google telephony
+
+   * vendor/lineage
+580a944f config: Update GMS telephony flag
+d1d306cd vendor: Drop prebuilt Backgrounds app
+10eef4f6 config: Rework build type versioning
+a1250636 overlay: Don't pin shader libraries
+f73493dd vendor: soong: Add camera_needs_client_info_lib
+c06a1ca6 config: Update versioning
+5c63c4f6 config: Remove apex overrides
+
+====================
+     01-14-2023
+====================
+
+
+   * lineage/hudson
+385be6b Regenerate device dependency mappings
+
+====================
+     01-13-2023
+====================
+
+
+   * lineage/wiki
+ae6647e devices: Import Motorola One Fusion+
+
+   * packages/apps/ParallelSpace
+df689c0 ParallelSpace: Enable google services by default
+
+   * vendor/gms
+7c774d2 vendor: gms: Refactor for riceDroid
+
+   * vendor/lineage
+71988165 config: Bump to v10.1 official release
+
+====================
+     01-12-2023
+====================
+
+
+   * lineage/mirror
+a3ef51e Updated aosp-minimal to 12-Jan-2023 13:01 UTC
+
+   * packages/apps/LineageParts
+2bb5625 ship as riceDroid
+
+====================
+     01-11-2023
+====================
+
+
+====================
+     01-10-2023
+====================
+
+
+   * android
+74a3cb6 Add back OmniJaws
+
+   * build/make
+063ee4fceb Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20
+
+   * build/soong
+9ccc9e243 java_sdk_library_import: Copy all prebuilt properties to child modules
+
+   * device/google/raviole
+158111b Add NGA
+
+   * device/lineage/sepolicy
+4a63fc7 Add fuse sepolicy rule
+
+   * frameworks/av
+08dffa6cbd Merge remote-tracking branch 'LineageOS/lineage-20.0' into lineage-20.0
+
+   * frameworks/base
+8674180dcc33 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20
+
+   * kernel/google/gs101/private/gs-google
+e1faaa2a9f01 Merge tag 'android-13.0.0_r0.54' into staging/lineage-20_merge-android-13.0.0_r0.54
+
+   * packages/apps/Aperture
+d8c5221 Automatic translation import
+
+   * packages/apps/AudioFX
+db29c41 Automatic translation import
+
+   * packages/apps/Contacts
+ee96f61 Automatic translation import
+
+   * packages/apps/DeskClock
+25dbc2a Automatic translation import
+
+   * packages/apps/Dialer
+ba98660 Automatic translation import
+
+   * packages/apps/DocumentsUI
+ec06fd0 Automatic translation import
+
+   * packages/apps/Eleven
+11519b4 Automatic translation import
+
+   * packages/apps/Etar
+b650bf7 Automatic translation import
+
+   * packages/apps/FlipFlap
+db18739 Automatic translation import
+
+   * packages/apps/Jelly
+6f2489a Automatic translation import
+
+   * packages/apps/Launcher3
+004fb7e7fb Launcher3: Update Dutch translation
+
+   * packages/apps/Recorder
+be505b3 Automatic translation import
+
+   * packages/apps/Updater
+468ff36 Automatic translation import
+
+   * packages/apps/crDroidSettings
+6604ea0 README: Recommend translator app
+
+   * packages/inputmethods/LatinIME
+eecbf81 Automatic translation import
+
+   * packages/providers/DownloadProvider
+be3cdfc Automatic translation import
+
+   * packages/resources/devicesettings
+93542da Automatic translation import
+
+   * packages/services/OmniJaws
+d8bdaf7 Temp Fix
+
+   * packages/services/Telecomm
+b796d288e Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20
+
+   * system/core
+3f471fd6e Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20
+
+   * system/sepolicy
+67b4d790f Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20
+
+   * vendor/addons
+4d91eff Build actual app and not prebuilt
+
+   * vendor/crowdin
+db63991 Automatic translation import
+
+   * vendor/google/raven
+3d44a82 Import blobs from TQ1A.230105.002
+
+   * vendor/qcom/opensource/fm-commonsys
+24e05dd Automatic translation import
+
+====================
+     01-09-2023
+====================
+
+
+   * hardware/motorola
+126240e MotoActions: Don't hardcode fillColor value of drawables
+
+====================
+     01-08-2023
+====================
+
+
+   * hardware/qcom-caf/sm8350/audio
+d09ec9c audio_extn: Allow skipping compilation of audio HAL extensions
+
+====================
+     01-07-2023
+====================
+
+
+====================
+     01-06-2023
+====================
+
+

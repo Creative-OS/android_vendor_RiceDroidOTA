@@ -1,0 +1,200 @@
+====================
+     01-09-2023
+====================
+
+
+   * android
+74a3cb6 Add back OmniJaws
+
+   * build/make
+063ee4fceb Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20
+
+   * build/soong
+9ccc9e243 java_sdk_library_import: Copy all prebuilt properties to child modules
+
+   * device/google/raviole
+158111b Add NGA
+
+   * device/lineage/sepolicy
+4a63fc7 Add fuse sepolicy rule
+
+   * frameworks/av
+08dffa6cbd Merge remote-tracking branch 'LineageOS/lineage-20.0' into lineage-20.0
+
+   * frameworks/base
+8674180dcc33 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20
+
+   * kernel/google/gs101/private/gs-google
+e1faaa2a9f01 Merge tag 'android-13.0.0_r0.54' into staging/lineage-20_merge-android-13.0.0_r0.54
+
+   * packages/apps/Launcher3
+004fb7e7fb Launcher3: Update Dutch translation
+
+   * packages/apps/Updater
+fb9554f Testing
+
+   * packages/apps/crDroidSettings
+6604ea0 README: Recommend translator app
+
+   * packages/services/OmniJaws
+d8bdaf7 Temp Fix
+
+   * packages/services/Telecomm
+b796d288e Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20
+
+   * system/core
+3f471fd6e Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20
+
+   * system/sepolicy
+67b4d790f Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20
+
+   * vendor/RiceDroidOTA
+03cb120 Update 09.01.2023
+a5f4e4d Build Update 6/1/2023
+
+   * vendor/addons
+4d91eff Build actual app and not prebuilt
+
+   * vendor/gms
+2c82212 Remove DeviceIntelligenceNetworkPrebuilt
+5cd3470 Add GoogleCamera, Youtube
+
+   * vendor/google/raven
+3d44a82 Import blobs from TQ1A.230105.002
+
+   * vendor/lineage
+6f4d81ed Add googlepackageinstaller to artifact list
+9055b2f2 overlay: Set default status bar height to 28dp
+
+====================
+     01-08-2023
+====================
+
+
+   * packages/apps/ParallelSpace
+2f9f1aa New Crowdin updates (#7)
+
+====================
+     01-07-2023
+====================
+
+
+   * packages/apps/Aperture
+2b5de18 Aperture: Force portrait when launched from locked keyguard
+
+====================
+     01-06-2023
+====================
+
+
+   * lineage/hudson
+2c871ad hudson: Promote surya to 20
+
+====================
+     01-05-2023
+====================
+
+
+   * lineage/wiki
+d8afec0 wiki: devices: Add Xiaomi sm8350 devices (lisa, renoir, haydn)
+
+====================
+     01-04-2023
+====================
+
+
+   * packages/apps/Settings
+d00d0bff57 Merge tag 'android-13.0.0_r20' into lineage-20.0
+
+====================
+     01-03-2023
+====================
+
+
+   * frameworks/opt/telephony
+17acd33 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20
+
+   * hardware/google/graphics/common
+55b2e6f Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20
+
+   * hardware/google/pixel
+1c37923 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20
+
+   * hardware/interfaces
+7c8b1cd3 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20
+
+   * lineage/crowdin
+f91a5bc config: lineage-20.0_aosp: Update for qpr1
+
+   * lineage/scripts
+aacffc6 update-device-vars: Add a sleep to avoid 429: Too Many Requests
+
+   * packages/modules/Bluetooth
+bb73b0d Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20
+
+   * packages/modules/Wifi
+ebfbe96 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20
+
+   * packages/providers/MediaProvider
+956e890 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20
+
+   * packages/services/Telephony
+95f0e55 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20
+
+   * system/security
+29becc37 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20
+
+   * vendor/crowdin
+9459431 Updates for qpr1
+
+====================
+     01-02-2023
+====================
+
+
+   * packages/apps/Etar
+dffa3ac remove duplicated check for allowed reminders and availability
+
+====================
+     01-01-2023
+====================
+
+
+   * frameworks/libs/net
+513f038 Add more DNS providers [1/3]
+
+   * frameworks/libs/systemui
+4002eae iconloaderlib: add support for custom themed icon pack [1/3]
+
+   * packages/modules/AdServices
+862ec5b9 Disable aidl#generate_traces
+
+   * packages/modules/Connectivity
+6815a91 Add more DNS providers [2/3]
+
+====================
+     12-31-2022
+====================
+
+
+   * external/google-fonts/cutive-mono
+32990a2 fonts: Remove real Cutive Mono fonts
+
+   * external/noto-fonts
+dee7660 fonts: Remove real Noto Serif Latin fonts
+
+   * external/roboto-fonts
+292d263 fonts: Remove real Roboto fonts
+
+   * lineage-sdk
+e78b53b lineage-sdk: Fix settings pref switch for multi-user
+
+   * lineage/website
+829460e www: Don't link to crowdin directly
+
+   * packages/apps/DeskClock
+3496824 DeskClock: Add FLAG_IMMUTABLE flag to PendingIntent
+
+   * packages/apps/ThemePicker
+5ed9e35 ThemePicker: add support for custom themed icon pack [2/3]
+
