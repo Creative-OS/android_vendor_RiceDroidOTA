@@ -1,200 +1,315 @@
 ====================
-     01-09-2023
+     01-30-2023
 ====================
 
-
-   * android
-74a3cb6 Add back OmniJaws
 
    * build/make
-063ee4fceb Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20
+468c329b14 Use aapt2
 
    * build/soong
-9ccc9e243 java_sdk_library_import: Copy all prebuilt properties to child modules
+58d7d561e Remove what we don't use and add google camera
+290c9c383 arm64: Build armv8-2a-dotprod with PAuth and BTI
+33af1d278 HWAsan: Increase the malloc fill size.
+cbcecf9cd dumpvars: Show more flags to the builder
+acb55e03f soong: Whitelist addr2line
 
    * device/google/raviole
-158111b Add NGA
+37916e8 Rice 10.1 updates
+3fbbc8a Remove OPTIONAL LD
 
    * device/lineage/sepolicy
-4a63fc7 Add fuse sepolicy rule
+8e80ff9 sepolicy: Label LinearmotorVibratorService
+83caa35 common: Import sepolicy for flipendo/turboadapter
+8ab8860 sepolicy: Grant neccesary ioctls to recovery for external sd
+45d9e8e sepolicy: Allow recovery to read sysfs_perdev_minors
+51cbe70 Allow platform access for fps info
+a44bf4d Allow apps to access usap pool
 
    * frameworks/av
-08dffa6cbd Merge remote-tracking branch 'LineageOS/lineage-20.0' into lineage-20.0
+64888f5a88 Fix potential memory leaks
+a9d3e6a374 libcameraservice: HAX for depth sensor on ginkgo [2/2]
+0a56764ffa Camera: Avoid roundBufferDimensionsNearest also for HAL_PIXEL_FORMAT_BLOB
+860ceb393c Camera: Skip stream size check for whitelisted apps
 
    * frameworks/base
-8674180dcc33 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20
-
-   * kernel/google/gs101/private/gs-google
-e1faaa2a9f01 Merge tag 'android-13.0.0_r0.54' into staging/lineage-20_merge-android-13.0.0_r0.54
-
-   * packages/apps/Launcher3
-004fb7e7fb Launcher3: Update Dutch translation
-
-   * packages/apps/Updater
-fb9554f Testing
-
-   * packages/apps/crDroidSettings
-6604ea0 README: Recommend translator app
-
-   * packages/services/OmniJaws
-d8bdaf7 Temp Fix
-
-   * packages/services/Telecomm
-b796d288e Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20
-
-   * system/core
-3f471fd6e Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20
-
-   * system/sepolicy
-67b4d790f Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20
-
-   * vendor/RiceDroidOTA
-03cb120 Update 09.01.2023
-a5f4e4d Build Update 6/1/2023
-
-   * vendor/addons
-4d91eff Build actual app and not prebuilt
-
-   * vendor/gms
-2c82212 Remove DeviceIntelligenceNetworkPrebuilt
-5cd3470 Add GoogleCamera, Youtube
-
-   * vendor/google/raven
-3d44a82 Import blobs from TQ1A.230105.002
-
-   * vendor/lineage
-6f4d81ed Add googlepackageinstaller to artifact list
-9055b2f2 overlay: Set default status bar height to 28dp
-
-====================
-     01-08-2023
-====================
-
-
-   * packages/apps/ParallelSpace
-2f9f1aa New Crowdin updates (#7)
-
-====================
-     01-07-2023
-====================
-
-
-   * packages/apps/Aperture
-2b5de18 Aperture: Force portrait when launched from locked keyguard
-
-====================
-     01-06-2023
-====================
-
-
-   * lineage/hudson
-2c871ad hudson: Promote surya to 20
-
-====================
-     01-05-2023
-====================
-
-
-   * lineage/wiki
-d8afec0 wiki: devices: Add Xiaomi sm8350 devices (lisa, renoir, haydn)
-
-====================
-     01-04-2023
-====================
-
-
-   * packages/apps/Settings
-d00d0bff57 Merge tag 'android-13.0.0_r20' into lineage-20.0
-
-====================
-     01-03-2023
-====================
-
-
-   * frameworks/opt/telephony
-17acd33 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20
-
-   * hardware/google/graphics/common
-55b2e6f Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20
-
-   * hardware/google/pixel
-1c37923 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20
-
-   * hardware/interfaces
-7c8b1cd3 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20
-
-   * lineage/crowdin
-f91a5bc config: lineage-20.0_aosp: Update for qpr1
-
-   * lineage/scripts
-aacffc6 update-device-vars: Add a sleep to avoid 429: Too Many Requests
-
-   * packages/modules/Bluetooth
-bb73b0d Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20
-
-   * packages/modules/Wifi
-ebfbe96 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20
-
-   * packages/providers/MediaProvider
-956e890 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20
-
-   * packages/services/Telephony
-95f0e55 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20
-
-   * system/security
-29becc37 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20
-
-   * vendor/crowdin
-9459431 Updates for qpr1
-
-====================
-     01-02-2023
-====================
-
-
-   * packages/apps/Etar
-dffa3ac remove duplicated check for allowed reminders and availability
-
-====================
-     01-01-2023
-====================
-
-
-   * frameworks/libs/net
-513f038 Add more DNS providers [1/3]
-
-   * frameworks/libs/systemui
-4002eae iconloaderlib: add support for custom themed icon pack [1/3]
-
-   * packages/modules/AdServices
-862ec5b9 Disable aidl#generate_traces
-
-   * packages/modules/Connectivity
-6815a91 Add more DNS providers [2/3]
-
-====================
-     12-31-2022
-====================
-
-
-   * external/google-fonts/cutive-mono
-32990a2 fonts: Remove real Cutive Mono fonts
-
-   * external/noto-fonts
-dee7660 fonts: Remove real Noto Serif Latin fonts
-
-   * external/roboto-fonts
-292d263 fonts: Remove real Roboto fonts
+8d38fb6c898c Change mODICaptionsTooltipView null check occasion to avoid potential crash
+a11525f0d13e core: Fix suspend failure for privilege system components
+ad37c895b111 base: Android P system animation (1/2)
+724733c2ab50 core: Optimize notification icon resources
+b7a2d42c6c92 SystemUI: Render notification icon area on main thread
+d45564f80784 SystemUI: Re-evaluate theme when adjusting status bar clock text size
+ae27db128cb6 SystemUI: Allow making Navigation Pill thinner [1/2]
+e226485e094c SystemUI: Allow Configuring Navbar Radius [1/2]
+40699ec51b17 SystemUI: Disable screen wakeup delay by default
+d6267c4d8fbc Revert "Revert "DisplayPowerController: Fix mismerge in proximity check""
+6a5ff74d06e1 SystemUI: Increase wifi signal space padding
+2a287c927af8 SystemUI: Combined QS headers toggle [1/2]
+eb467ce95c0b SystemUI: Combined QS header layout fixes
+79afe6ad7023 SystemUI: Enable new combined QS header layout
+6e4f60138f7b Power menu styles: Initial checkin for T [1/2]
+93fcc1b59464 SystemUI: Blur the power menu
+af06cd4f2cbd SystemUI: use color seed generation algorithm from AOSP
+7362bb627c43 core: Whitelist misc system apps
+3884daeff6b0 Fix screen unpinning text on devices that have gestures on fp sensor
+429c71c145ab Allow screen unpinning on devices without navbar
+9bf8850299b1 base: Allow locking tasks to recents [1/2]
+9b15478993c6 Revert "Don't check wakefulness before setting sandman summoned to false."
+b0991ef9de98 Reland 'EnhancedEstimates: Get estimates from Device Health Services'
+509c961e0a37 base: Pocket Judge: Don't go to sleep while on call
+e7212769712b Camera: Fix size list parceling
+45e8dc95ae4d Fixups for Barring Info
+5e088659b49e Fix NPE when finishing remote animation
+5212fa526fb2 [HDR]:UserDisabledHdrTypes is not updated after system reboot
+402920b7798b SystemUI: Fix small keyguard clock text alignment
+f83137a4442f services: Add a system property for linearmotor service
+cd2376ed2ca8 SystemUI: Combined signal icons toggle [1/2]
+ed1350d1a2ec SystemUI: Restore Combined signal icons support
+730acfefb72b SystemUI: Lockscreen clock format settings [1/2]
+b5370ba8e60c core: Enable freeform windows assets preloading
+f8c5609ccc05 SystemUI: Redesign lockscreen bottom buttons
+b80c6aa2ea42 SystemUI: Introduce Google TV remote controls keyguard affordance [1/2]
+c67858679ba3 BrightnessUtils: Allow maintainer to set desired brightness curve impl
+6b5d2f0bd977 base: Fix brightness slider curve for some devices
+0f65375f150d Don't request render in GLSurfaceView.GLThread ctr
+e2b2510beb23 Fix profile provisioning check in secondary users
+1f3b3b26b45a PixelPropsUtils: Update game props
+a812c316940e PixelPropsUtils: Set shipping level to 32 for devices >=33
+4258d2d9a53a PixelPropsUtils: Use actual device model name
+2c14d648ebcf PixelPropsUtils: Use spoofBuildGms for FP and model alteration
+697ec3f3f7bf Revert "PixelPropsUtils: Set shipping level to 32 for devices >=33"
+b4562469b5d4 Don't check wakefulness before setting sandman summoned to false.
+631a3e58bde6 Add user handle in SimInfo database.
+bdf9fce62913 [LE Audio] To fix the QR Code parse error
+bc54fde28dd9 Creat hardlink if active apexes are in the same partition
+ca074cdac958 Don't warn for displays with no input device matching.
+ec6d660c26da Add YCBCR_P010 in switch content in ImageUtil getNumPlanes.
+0383822b8ab1 Camera: Register LensShadingMap marshaler
+51aa6af88a79 IImsCallSession AIDL calls are handled on a different thread for MT calls
+95b1d7a69d71 SystemUI: Reconfigure bottom indication text paddings
+3197cff46b2f Delay tryToRebind if application exit reason is LMK
+bd390930fe26 hwui: Increase renderthread priority
+8f645baf6dd9 PixelPropsUtils: Set shipping level to 32 for devices >=33
+bf4a0def7677 Update notchbarkiller overlays
+697ed170b18a add missing display cutout overlays
+7f3fc03362af overlays: Add notchbar killer for left-notch devices
+774882075dba Overlays: Add notch bar killer
+2ecb8e9a9b40 SystemUI: Redraw display cutout on overlay changes
+9a82a1c420ff ThemeOverlayController: Don't enable neutral overlay when we use dark bg
+82a706ef056a SystemUI: AuthController: Fix NPE due to isPowerbuttonFps()
+8856f947e9c7 SystemUI: AuthController: Fix ripple animation for side fp devices
+63a906f289ea SystemUI: Scale mobile data type icon with font size
+8094b44befdd SystemUI: Implement sleep for pickup gesture
+28c3643faf18 SystemUI: Improve statusbar mobile type icons padding
+13b78d919fa8 PowerUI: Mute logcat spam.
+df78ed881982 SystemUI: Don't force small clock when media isn't allowed on keyguard
+5ea5db51bcd6 Avoid resursion for sleep check in embedding window
+04a9436ba038 Fix potential crash when TaskDisplayArea is null
+6e2d03edf235 Fix potential NPE in Notification
+80b853494808 Fix potential NPE when MessagingMessage's message is null
+99c684d847a1 Task automatically closing(PIP)
+22714f5daadd Fix a11y focus rendering on non-dirty root view.
+6f8afdb14227 prevent crash with pin protected user and taskview
+f8df41bf1435 ThemeOverlay: Extended monet themes [1/3]
+7e90a0f71a79 services: Fix the initialization check for swipe to screenshot
+71d5d3cd2219 SystemUI: Introduce preferred network tile
+9bf952719c09 base: Add optional haptic feedback to volume panel [1/2]
+1619dcce12af Add a property to configure screen wake up delay
+8edf5f360e08 Make screen off blanking delay config a system property
+de8ba2191f6c base: Introduce App Lock [1/4]
+4d4d6f54d4c7 ParallelSpace: Add Android Auto to block list
+55d770523bb5 ParallelSpace: Allow/block essential apps without overlay
+0813888d98be SystemUI: Remove visibility check in setting QSCarrier color
+0e729518cc03 core: Extend pixel experience features
+f893f2f77907 Revert "When a user is unlocked, it will install provider, but it cannot publish Provider successfully,we need add pr.installProvider before scheduleInstallProvider"
+3539608d2e03 Revert "Fix potential race condition problem"
+e3c4c45d7622 Revert "Reset PowerGroup.mIsSandmanSummoned while waking up."
+d72040e5b941 Fix SystemUI mapping SIM state error issue
+d9e1018bde5a Fixed the incorrect downlinkOffset and uplinkOffset values
+b18e35621469 [Bugfix] Add reading timeout when waiting for the reply of an application zygote.
+f45fb3e35307 Fix for GSM-8bit encoding error
+2cdc32137c4e permissions: Grant `ACCESS_COARSE_LOCATION` to some system apps
+394558da3371 MobileSignalController: Do not duplicate SPN and PLMN
+7d1dcb211ec1 services: Grant OnePlus camera WRITE_SETTINGS by default
+c17cd793e2c4 SystemUI: Hide notifications when quickly expanding QS
+2355d6d9d2df base: Add mock oplus LinearmotorVibratorService
+43037dee26da ServiceRecord: Don't post running notification for oplus camera
+94d3f74ca27a DisplayModeDirector: Allow to enforce user selected resolution
+d80fdf379dee SystemUI: Introduce dynamic lockscreen clock spacing
+fac78f57a1de SystemUI: Increase maximum blur radius to 125px
+bee3714511f4 PixelPropsUtils: Spoof Pixel 7 to Pixel2022 packages
+508db6b775d9 Revert "libs: hwui: Silence OpenGL swap behavior failures"
+ffd54155f3c4 Reduce Integer allocations in ThreadLocalWorkSource
+5e3c7edd6bad Fix potential NPE when ActivityClientRecord is null
+eb51d2dce2d9 Revert "[Bugfix] Add reading timeout when waiting for the reply of an application zygote."
+77bbaf8041f8 Emulator: handle OOM and Protocol error cases
+9d89871cd2c5 Prohibit the influence of Adj across applications
+4792b4013e31 [AMS] Check low mem by reading /proc/meminfo.
+3f5903c4bc80 fixup! Improvements for dynamic VoLTE & VoWiFi icons fixes https://github.com/crdroidandroid/issue_tracker/issues/65
+7e3575a4c357 base: Double tap to trigger doze [1/2]
+6662b1f186ca SystemUI: write initial value of SHOW_QR_CODE_SCANNER_SETTING on first call
+8c88516a3b5f Add handling of missing ServiceSpecificException
+d52e2180e0b1 base: Allow setting bottom keyguard shortcuts [1/2]
+031d8487e7bf Revert "Fix NullPointerException when the display has been disabled"
+97a621be02b5 Add Ambient Customizations [1/2]
+6f5e4b069d74 Revert "SystemUI: Update black theme package overlay"
+256ee9a6927d Fix stuck screen from display change timeout
+82c2a2ff7312 AlertWindowNotification: Correctly load app label
+f8bdb43f8a05 camera: Skip HFR checks for privileged apps.
+27f065196eee Camera: Skip stream size check for whitelisted apps..
+1c1a82f5bd33 Automatic translation import
 
    * lineage-sdk
-e78b53b lineage-sdk: Fix settings pref switch for multi-user
+0dabf8fd ship as riceDroid
+946b69a8 sdk: add HFR privapp camera related resource to config.xml
+b2cd7e39 Automatic translation import
 
-   * lineage/website
-829460e www: Don't link to crowdin directly
+   * packages/apps/Settings
+0cfaa45191 Settings: Allow making Navigation Pill thinner [2/2]
+c308110e10 Settings: Allow Configuring Navbar Radius [2/2]
+900f78a593 Settings: Fix gestures saving parameters
+7cdccecbfb [LE Audio] To add the vibrate when the scan is successful
+e4b72feebc Link smallest width options in display settings
+3f620e6fe0 Settings: Move Notch Cutout to Display
+cbc42621e4 Settings: Introduce App Lock [3/4]
+555d28be8b Settings: Update PowerUsageFeature implementation for QPR1
+004bc8b26d Settings: Bluetooth: Don't check persistable uri permission for BtHelper
+c87b4c850f Settings: Fix layout battery UsageView
+20d404b1cf Settings: Double tap to trigger doze [2/2]
+7bccf6c55a DisplaySettings: font size in 5% steps from 80% to 130% (#132)
+bb87eaaf08 Settings: Avoid enforcing weird backgrounds
+ec5674e87a settings: Fix power usage summary preference fragment path
+bf514b6a8a Settings: Add Pixel battery addons [1/2]
+f621ad7f86 settings: Hardcode preference icons to color accent
 
-   * packages/apps/DeskClock
-3496824 DeskClock: Add FLAG_IMMUTABLE flag to PendingIntent
+   * packages/apps/crDroidSettings
+653e986 settings: Android P system animation (2/2)
+c45c848 settings: Add strings for gesture navbar radius
+0bd885d settings: Update QS transparency title string
+8dd6670 settings: Combined QS Headers toggle [2/2]
+6a2aaf2 settings: Power menu styles [2/2]
+48a4958 settings: Combined signal icons toggle [2/2]
+485af0f settings: Introduce Google TV remote controls keyguard affordance [2/2]
+dff0645 settings: Lockscreen clock format settings [2/2]
+9fd97e1 settings: Extended monet themes [2/3]
+559f2ae settings: Optional volume haptic feedback
+55cef13 settings: Import app lock strings and arrays
+d60b648 settings: Default to AOSP large clock size and spacing
+698ce9a settings: misc: Properly disable services if system manager is disabled
+16fdcb6 settings: Import double tap to trigger doze strings
+11f4b66 settings: Allow setting bottom keyguard shortcuts [2/2]
+2bd0bcd settings: Add Ambient Customizations [2/2]
 
-   * packages/apps/ThemePicker
-5ed9e35 ThemePicker: add support for custom themed icon pack [2/3]
+   * vendor/addons
+7ddf894 fonts: Restore missing google sans font weights
+85c4835 clock fonts: Use Google Sans Clock font
+701279f BlackTheme: Adjust luminance for neutral shades 800 and above
+
+   * vendor/gms
+c205b1f Add GoogleCamera, Youtube
+
+   * vendor/lineage
+8176de2b Fix non gms builds
+cc174432 fixup config: Remove aosp and lineage audio packs
+f7b6ec9e config: Match grapheneos camera flag with readme documentation
+432a9a51 overlay: add camera app QrTile activity as default
+5bef3993 prebuilts: sdk: Add latest preference-ktx library
+9880129d overlay: device_config: Globally enable the new photo picker
+e3358dba config: version: Guard community builds as well
+e66f20b0 apns: Update APN settings for jionet
+ff5873de config: Remove aosp and lineage audio packs
+eb04fbbc config: Remove dexpreopt changes
+7622a812 apns: Update mobily APN for prepaid connection
+fcedab63 apns: Grameenphone uses APN 'gpinternet'
+2700f1e0 config: Add support for Graphene Camera
+ab73bdf1 vendor: config: common: Build BtHelper
+cc4dec45 overlay: Remove art-related files from pinner list
+1df0ece4 soong: Add support to set vendor tag with client package name
+8f26ca9b config: Cleanup package type condition
+957efdc3 config: Update keyboard padding flags and properties
+bc1f926a build: tools: Update Changelogs
+3cc54a8f soong: Remove unused cflags for TARGET_ALTERNATIVE_FUTEX_WAITERS
+2b9bbd4f Helplines: Improve Bulgarian helplines
+125b6d2e Use a RegEx to get carrier instead of XML parsing
+45d379c4 Include `carrier=` in carrier match string
+df326bce Fix custom_apns script
+2878d92d kernel: Force disable LLVM CUDA
+c597499a vars: Update qcom tags
+f90db0b9 config: Split sdm660 from UM_4_4_FAMILY
+d50ee37f Split msm8937 from UM_3_18_FAMILY and fix it
+440e83ee config: Only install theme packages on mobile
+2cc3655e config: Only install audio files on mobile
+
+====================
+     01-29-2023
+====================
+
+
+   * packages/apps/Launcher3
+f5cf7bf8d0 Launcher3: fix app icon font
+93c61a7bc5 Allow widgets to have 1 row as minimum size
+
+====================
+     01-28-2023
+====================
+
+
+   * packages/apps/Launcher3
+97011227fc Enable local colors for popup menu items
+bb7c9aca3f IconPalette: Don't crash when the app gives us an invalid color
+7c29a0472b Launcher3: disable white gradient on home screen
+ace3c58b54 SushiLauncher: Update recent apps UI
+6cb73c0cfc Launcher3: Allow locking tasks to recents [2/2]
+
+====================
+     01-27-2023
+====================
+
+
+   * packages/apps/Launcher3
+c1d051e4cb Launcher3: Open running services activity when clicking meminfo view
+1852fc3b3b Launcher3: Cleanup QsbLayout `onFinishInflate`
+
+====================
+     01-26-2023
+====================
+
+
+   * packages/apps/Launcher3
+65a792fb76 Launcher3: Optional music search toggle for QSB
+
+====================
+     01-25-2023
+====================
+
+
+   * packages/apps/Launcher3
+2808963210 fixup!: Launcher3: Add toggle for translucent hotseat background
+56cf7a749f Launcher3: Do not add more space on hotseat with taskbar
+02e7344c8b Launcher3: Adjust icons on dock search bar
+0bc95b6255 Launcher3: Clean up AssistantIconView
+
+====================
+     01-24-2023
+====================
+
+
+====================
+     01-23-2023
+====================
+
+
+====================
+     01-22-2023
+====================
+
+
+   * packages/apps/Launcher3
+a7e18bfda1 ui: Fix premature short-circuit on end spring anim
+916ff8391f Fix NPE in SurfaceTransactionApplier when ViewRootImpl is null
+44f0d25ff3 Fix NPE in FallbackSwipeHandler when getRunningTask() returns null
+
+====================
+     01-21-2023
+====================
+
 
