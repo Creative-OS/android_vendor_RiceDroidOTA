@@ -1,4 +1,9 @@
 ====================
+     02-06-2023
+====================
+
+
+====================
      02-05-2023
 ====================
 
@@ -167,9 +172,6 @@ b9d68c7 themes: Import Dashboard styles overlays
 ====================
 
 
-   * kernel/google/gs201/private/gs-google
-499b21d8e LTO FULL to THIN
-
    * packages/modules/Bluetooth
 fb9c37e156 BtHelper: Apply rightLeft check to usingLeft/usingRight
 0bcf72f1ce BtHelper: Initial support for showing battery separately
@@ -188,8 +190,8 @@ fd960d2f Don't enable gboard paddings by default
 ====================
 
 
-   * packages/apps/Aperture
-b836b48 Aperture: Add DPP QR handling
+   * kernel/google/gs201/private/gs-google
+499b21d8e LTO FULL to THIN
 
 ====================
      01-31-2023
@@ -199,9 +201,6 @@ b836b48 Aperture: Add DPP QR handling
    * android
 638179b gms brnach to 13 and add oriole vendor
 
-   * build/make
-468c329b14 Use aapt2
-
    * build/soong
 ab9ee6d54 Remove what we don't use and add google camera
 
@@ -210,9 +209,6 @@ ab9ee6d54 Remove what we don't use and add google camera
 
    * device/google/raviole
 88703bd Set WITH_GMS true
-
-   * device/lineage/sepolicy
-8e80ff9 sepolicy: Label LinearmotorVibratorService
 
    * device/motorola/racer
 d53bd7a Add board name
@@ -225,6 +221,9 @@ d53bd7a Add board name
 
    * lineage-sdk
 0dabf8fd ship as riceDroid
+
+   * packages/apps/Aperture
+b836b48 Aperture: Add DPP QR handling
 
    * packages/apps/Settings
 0cfaa45191 Settings: Allow making Navigation Pill thinner [2/2]
@@ -266,8 +265,11 @@ f856976 Updates
 ====================
 
 
-   * lineage/wiki
-1e24ff3 wiki: devices: a52q/a72q require T firmware
+   * build/make
+468c329b14 Use aapt2
+
+   * device/lineage/sepolicy
+8e80ff9 sepolicy: Label LinearmotorVibratorService
 
 ====================
      01-29-2023
@@ -280,13 +282,11 @@ f856976 Updates
    * lineage/hudson
 bcd5808 hudson: Promote nx563j to 20.0
 
+   * lineage/wiki
+1e24ff3 wiki: devices: a52q/a72q require T firmware
+
 ====================
      01-28-2023
-====================
-
-
-====================
-     01-27-2023
 ====================
 
 

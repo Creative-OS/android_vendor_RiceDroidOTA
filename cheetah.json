@@ -1,0 +1,28 @@
+{
+  "response": [
+    {
+        "maintainer": "NivlaFX",
+        "oem": "Google",
+        "device": "Pixel 7 Pro",
+        "filename": "riceDroid-13.0-202302061723-cheetah-v10.1-AOSP-COMMUNITY-img.zip",
+        "download": "https://sourceforge.net/projects/creative-oss/files/cheetah/10.x/riceDroid-13.0-202302061723-cheetah-v10.1-AOSP-COMMUNITY-img.zip/download",
+        "timestamp": 1675704165,
+        "md5": "44933cd93fc46413deb47b32d2e20dac",
+        "sha256": "24ad56f683e051b951ced193bbd1d9b5ff0297fe9c2cecc00448ec5f49a5e321",
+        "size": 1919922744,
+        "version": "10.1",
+        "buildtype": "Beta",
+        "forum": "https://t.me/CreativeRaviole",
+        "gapps": "",
+        "firmware": "",
+        "modem": "",
+        "bootloader": "",
+        "recovery": "",
+        "paypal": "",
+        "telegram": "https://t.me/CreativeRaviole",
+        "dt": "https://github.com/Creative-OS/android_device_google_pantah",
+        "common-dt": "",
+        "kernel": "https://github.com/Creative-OS/android_kernel_google_gs201"
+    }
+  ]
+}

@@ -4,12 +4,12 @@
         "maintainer": "NivlaFX",
         "oem": "Motorola",
         "device": "Edge",
-        "filename": "riceDroid-13.0-202301151305-racer-v10.1-PIXEL-OFFICIAL.zip",
-        "download": "https://sourceforge.net/projects/creative-oss/files/racer/10.x/riceDroid-13.0-202301151305-racer-v10.1-PIXEL-OFFICIAL.zip/download",
-        "timestamp": 1673787938,
-        "md5": "6b1880dfc5a258bc480b198f21041358",
-        "sha256": "c9fcd911a2a79838abfc4fec841d3aec2918c4fafee875f17347cc8d31f6c6ea",
-        "size": 1807771057,
+        "filename": "riceDroid-13.0-202302050535-racer-v10.1-PIXEL-COMMUNITY.zip",
+        "download": "https://sourceforge.net/projects/creative-oss/files/racer/10.x/riceDroid-13.0-202302050535-racer-v10.1-PIXEL-COMMUNITY.zip/download",
+        "timestamp": 1675575249,
+        "md5": "4e4a7cafdf1d753af673a0e4c7d0a3dd",
+        "sha256": "be25a60cd3109b7e1725e94f37a85d8a11c88919362379b66f83f3da070fb49e",
+        "size": 1643773101,
         "version": "10.1",
         "buildtype": "Beta",
         "forum": "https://t.me/CreativeRaviole",
@@ -20,9 +20,9 @@
         "recovery": "",
         "paypal": "",
         "telegram": "https://t.me/CreativeRaviole",
-        "dt": "https://github.com/Creative-OS/android_device_google_raviole",
+        "dt": "https://github.com/Creative-OS/android_device_motorola_racer",
         "common-dt": "",
-        "kernel": "https://github.com/Creative-OS/android_kernel_google_gs101"
+        "kernel": "https://github.com/Creative-OS/android_kernel_motorola_sm7250"
     }
   ]
 }
